@@ -1,0 +1,61 @@
+.download-container {
+  /* display: flex; */
+  margin-top: 30px;
+}
+
+.download-image {
+  /* width: 600px; */
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  text-align: center;
+}
+
+.download-image > h2 {
+  font-family: sans-serif;
+  margin-bottom: 10px;
+}
+
+.download-button {
+  margin-top: 10px !important;
+}
+
+.download-image > p {
+  margin-top: 10px;
+}
+
+#comment-title {
+  margin-bottom: 0;
+  font-weight: 50 !important;
+  font-family: sans-serif !important;
+}
+#hr{
+    margin: 2px;
+}
+
+#comment-container {
+  margin-bottom: 80px;
+}
+
+@media screen and (max-width: 768px) {
+  .download-container {
+    margin-top: 20px;
+  }
+  
+  .download-image {
+    width: 100%;
+    object-fit: contain;
+  }
+  .download-image > img{
+    width: 100%;
+    object-fit: contain;
+  }
+  
+  .download-image > h2 {
+    font-size: 30px;
+    font-weight: 200;
+  }
+  
+}
+

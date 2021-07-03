@@ -1,0 +1,34 @@
+.freelance-form {
+  background-image: linear-gradient(to right, #434343 0%, black 100%);
+  color: whitesmoke;
+}
+
+#freelance-container {
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+
+.form-heading
+{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.form-heading > h1
+{
+    font-weight: 200;
+    font-family: sans-serif;
+}
+
+.form-heading > h3
+{
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+@media screen and (max-width: 768px) {
+  
+}

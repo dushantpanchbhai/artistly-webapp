@@ -1,0 +1,18 @@
+#iframe_style
+{
+    width: 32%;
+    margin: 5px;
+    border-radius: 15px;
+    height: 250px;
+}
+
+@media screen and (max-width: 768px)
+{
+    #iframe_style
+    {
+        width: 100%;
+        margin: 5px;
+        border-radius: 15px;
+        height: 100%;
+    }
+}

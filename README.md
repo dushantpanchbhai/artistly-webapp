@@ -1,3 +1,9 @@
+# Introduction
+
+This is the react js code template of my personal brand website (artistly). This is owned by Artistly. Any action of copying or producting more instances will be violation of copyright.
+
+copyright Artistly 2021
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

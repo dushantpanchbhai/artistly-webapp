@@ -1,0 +1,11 @@
+.addModel_title {
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  margin-top: 20px;
+}
+
+.imageupload__progress {
+  margin-top: 50px;
+  width: 100%;
+}

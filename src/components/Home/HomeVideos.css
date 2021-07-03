@@ -1,0 +1,52 @@
+#homeVideos
+{
+  display: flex;
+  flex-wrap:wrap;
+  background: url('https://images.pexels.com/photos/1363876/pexels-photo-1363876.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500') no-repeat center center fixed;
+  background-size: cover;
+  text-align: center;
+}
+
+#videocontainer_component
+{
+  flex:0 0 33.33%;
+}
+
+#title2
+{
+  text-decoration: none;
+  color: #fff;
+}
+
+#videoTitle
+{
+  font-family: sans-serif;
+  font-size: 50px !important;
+  font-weight: 100;
+  margin: 50px 2px 40px 2px;
+}
+
+#more1
+{
+  font-size: 15px;
+}
+
+@media screen and (max-width: 768px)
+{
+  #videocontainer_component
+  {
+    flex:0 0 100%;
+  }
+
+  #videoTitle
+  {
+    font-size: 40px !important;
+    font-weight: 350 !important;
+    margin: 30px 0px 20px 0px;
+  }
+
+  #videolink_container
+  {
+    margin-top: 0px !important;
+  }
+}
