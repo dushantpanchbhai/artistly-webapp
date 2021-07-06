@@ -19,12 +19,12 @@
 .form-heading > h1
 {
     font-weight: 200;
-    font-family: sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .form-heading > h3
 {
-    font-family: sans-serif;
+  font-family: 'Open Sans', sans-serif;
     font-size: 20px;
     font-weight: 300;
 }

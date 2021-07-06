@@ -13,7 +13,7 @@
 }
 
 .download-image > h2 {
-  font-family: sans-serif;
+  font-family: 'Open Sans', sans-serif;
   margin-bottom: 10px;
 }
 
@@ -28,7 +28,7 @@
 #comment-title {
   margin-bottom: 0;
   font-weight: 50 !important;
-  font-family: sans-serif !important;
+  font-family: 'Open Sans', sans-serif !important;
 }
 #hr{
     margin: 2px;
