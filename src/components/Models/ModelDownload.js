@@ -8,7 +8,7 @@ import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 
 function ModelDownload() {
   let { file } = useParams();
-  const [{ model, user }] = useStateValue();
+  const [{ model, user },dispatch] = useStateValue();
   const displayModel = model.filter((items) => {
     return items.id === file;
   });
@@ -43,6 +43,18 @@ function ModelDownload() {
       });
       console.log("updated ---");
   },[file]);
+
+  useEffect(() => {
+    db.collection("posts").orderBy("timestamp").onSnapshot((snapshot) => {
+      dispatch({
+        type: "UPDATE_MODELS",
+        items: snapshot.docs.map((doc) => ({
+          id: doc.id,
+          model: doc.data(),
+        })),
+      });
+    });
+  }, [dispatch]);
 
   return (
     <div className="container">
