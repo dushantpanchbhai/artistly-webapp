@@ -8,6 +8,8 @@ import Videos from "./components/Videos/Videos.js";
 import Freelance from "./components/Freelance/Freelance";
 import ModelDownload from "./components/Models/ModelDownload.js";
 import AddModel from "./components/append/AddModel";
+import Blog from './components/Blogs/Blog.js'
+import AddBlog from './components/append/AddBlog'
 
 import { useEffect } from "react";
 
@@ -77,6 +79,11 @@ function App() {
           <Freelance />
         </Route>
 
+        <Route excat path="/blogs">
+          <Header />
+          <Blog />
+        </Route>
+
         <Route exact path="/models/download/:file">
           <Header />
           <ModelDownload />
@@ -85,6 +92,11 @@ function App() {
         <Route exact path="/add">
           <Header />
           <AddModel />
+        </Route>
+
+        <Route exact path="/addblog">
+          <Header />
+          <AddBlog />
         </Route>
 
         <Route exact path="/">

@@ -3,6 +3,7 @@ export const initialState = {
   model: [],
   videos: [],
   userName: "",
+  blog: [],
   logins: 0,
 };
 
@@ -14,7 +15,6 @@ const reducer = (state, action) => {
         ...state,
         user: action.user,
       };
-      
     case "UPDATE_MODELS":
       return { ...state, model: action.items };
 
@@ -27,6 +27,9 @@ const reducer = (state, action) => {
     case "INCREMENT_LOGIN":
       return {...state,login: action.login}
       
+    case "UPDATE_BLOG":
+      return {...state, blog: action.items}
+
     default:
       return state;
   }

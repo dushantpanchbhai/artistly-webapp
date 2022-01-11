@@ -8,7 +8,7 @@ import { useStateValue } from "../../StateProvider";
 
 function Models() {
 
-  const [{ model,user}, dispatch] = useStateValue();
+  const [{model,user}, dispatch] = useStateValue();
   
   useEffect(() => {
     db.collection("posts").orderBy("timestamp").onSnapshot((snapshot) => {
@@ -28,7 +28,7 @@ function Models() {
         <div className="models_title">
           <h2>Models</h2>
         </div>
-
+        
         {user? (" "):(
           <div>You need to login for downloading models.</div>
         )}

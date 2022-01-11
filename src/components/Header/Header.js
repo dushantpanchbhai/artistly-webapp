@@ -69,9 +69,14 @@ function Header() {
                   Videos
                 </NavLink>
               </li>
+              {/* <li className="nav-item">
+                <NavLink className="nav-link" activeClassName="active" to="/blogs">
+                  Blogs
+                </NavLink>
+              </li> */} 
               <li className="nav-item">
                 <NavLink className="nav-link" activeClassName="active" to="/freelance">
-                  Freelance
+                  Hire Me!  
                 </NavLink>
               </li>
             </ul>
