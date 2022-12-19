@@ -3,6 +3,9 @@ import "./FreelanceForm.css";
 import Footer from "../Footer";
 import { db, storage } from "../../firebase";
 import { useStateValue } from "../../StateProvider";
+
+import emailjs from '@emailjs/browser';
+
 function FreelanceForm() {
   const [{ user }] = useStateValue();
   const [name, setName] = useState("");
@@ -24,6 +27,21 @@ function FreelanceForm() {
 
   const handleClick = (e) => {
     e.preventDefault();
+
+    // email js part
+    emailjs.send("service_8jvxgeh","template_rxp6bqk",{
+      from_name: name,
+      from_email: email,
+      message: work,
+      refrence: videoUrl,
+      },'X0r9h48WY9aqWpTKX')
+    .then((result) => {
+        console.log(result.text);
+    },(error) => {
+        console.log(error.text);
+    });
+
+    // 
     if (refImage) {
       const uploadTask = storage
         .ref(`/UserImages/${refImage.name}`)
@@ -109,7 +127,7 @@ function FreelanceForm() {
             leave your info and work below and i will contact you soon
           </h3>
         </div>
-        <form>
+        <form onSubmit={handleClick}>
           {/* name */}
           <div className="form-group my-3">
             <label>Name</label>
@@ -121,6 +139,7 @@ function FreelanceForm() {
               required
               value={name}
               onChange={(e) => setName(e.target.value)}
+              name="from_name"
             />
           </div>
           {/* email */}
@@ -134,6 +153,7 @@ function FreelanceForm() {
               value={email}
               required
               onChange={(e) => setEmail(e.target.value)}
+              name="from_email"
             />
           </div>
           {/* work Details */}
@@ -146,6 +166,7 @@ function FreelanceForm() {
               value={work}
               required
               onChange={(e) => setWork(e.target.value)}
+              name="message"
             ></textarea>
           </div>
 
@@ -169,6 +190,7 @@ function FreelanceForm() {
               placeholder="(optional)"
               value={videoUrl}
               onChange={(e) => setVideoUrl(e.target.value)}
+              name="refrence"
             />
           </div>
 
@@ -176,7 +198,6 @@ function FreelanceForm() {
             type="submit"
             className="btn btn-primary my-3"
             id="submit-button"
-            onClick={handleClick}
           >
             Submit
           </button>

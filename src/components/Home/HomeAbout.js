@@ -21,8 +21,7 @@ function HomeAbout() {
         <div className="homeAbout_paragraph">
           <p>
             Wondering what this website is about? Hey there, I am glad you visit
-            my website. This is Dushant Panchbhai. I am a 3D Artist and a Web
-            Developer, passionate about learning more about 3D Art and Visual
+            my website. This is Dushant Panchbhai. I am a CGI Artist passionate about learning more about 3D Art and Visual
             Effects and sharing all the knowledge I have with others. This
             website is my small initiative to share all my model files and
             videos in one place. Check out my social handles to know more about

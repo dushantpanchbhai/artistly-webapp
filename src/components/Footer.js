@@ -4,7 +4,7 @@ import './Footer.css'
 function Footer() {
     return (
         <div className="footer">
-           &#169; Artistly 2021
+           &#169; Artistly 2022
         </div>
     )
 }

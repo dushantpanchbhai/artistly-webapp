@@ -26,8 +26,6 @@ function Freelance() {
                   <li>3D Artist</li>
                   <li>-</li>
                   <li>Video Editor</li>
-                  <li>-</li>
-                  <li>Web Dev</li>
                 </ul>
               </div>
 
