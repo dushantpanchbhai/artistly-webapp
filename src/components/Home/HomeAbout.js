@@ -36,7 +36,7 @@ function HomeAbout() {
 
           <div className="homeAbout_social_icons">
             <Link
-              to={{ pathname: "https://www.instagram.com/dushant.73/" }}
+              to={{ pathname: "https://www.instagram.com/artistly73/" }}
               target="_blank"
             >
               <img src="../images/instagram.png" class="individual_icon" alt="instagram"></img>
