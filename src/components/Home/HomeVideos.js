@@ -10,13 +10,17 @@ function HomeVideos() {
 
   useEffect(() => {
     fetch(
-      `https://youtube.googleapis.com/youtube/v3/activities?part=contentDetails&channelId=UCW15y5uBetmTJIZcc7oTlbA&maxResults=6&key=${apiKey}`
+      `https://youtube.googleapis.com/youtube/v3/activities?part=contentDetails&channelId=UCW15y5uBetmTJIZcc7oTlbA&maxResults=10&key=${apiKey}`
     )
       .then((res) => res.json())
       .then((data) => {
-        const result = data.items.map((item) => {
-          return { videoId: item.contentDetails.upload.videoId };
-        });
+        const result = [];
+        data.items.map((item) => {
+            if(item.contentDetails.hasOwnProperty("upload"))
+            {
+              result.push({ videoId : item.contentDetails.upload.videoId });
+            }
+          });
 
         dispatch({
           type: 'UPDATE_VIDEOS',

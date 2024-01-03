@@ -46,7 +46,7 @@ function Login() {
             <div class="form-group" id="form-group1">
               <input
                 id="input-data"
-                type="text"
+                type="password"
                 class="form-control"
                 isrequired="true"
                 placeholder="Password"

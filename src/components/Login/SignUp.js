@@ -82,7 +82,7 @@ function SignUp() {
               {/* <label>Password</label> */}
               <input
                 id="input-data"
-                type="text"
+                type="password"
                 class="form-control"
                 isrequired="true"
                 placeholder="Password"

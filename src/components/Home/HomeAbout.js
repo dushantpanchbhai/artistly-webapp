@@ -36,7 +36,7 @@ function HomeAbout() {
 
           <div className="homeAbout_social_icons">
             <Link
-              to={{ pathname: "https://www.instagram.com/artistly73/" }}
+              to={{ pathname: "https://www.instagram.com/artistly_studio/" }}
               target="_blank"
             >
               <img src="../images/instagram.png" class="individual_icon" alt="instagram"></img>
@@ -73,11 +73,11 @@ function HomeAbout() {
         </div>
 
         {/* hire me here */}
-        <div className="homeAbout_hiring_section">
+        {/* <div className="homeAbout_hiring_section">
           <p>
             Hire me <Link to="/freelance">here.</Link>
           </p>
-        </div>
+        </div> */}
         <Footer/>
       </div>
     </div>

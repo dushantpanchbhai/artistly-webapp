@@ -6,7 +6,7 @@ function YoutubeEmbeded({embedId}) {
     return (
         <div className='container'>
         {
-            embedId.map((id) => 
+            embedId.map((id) =>
             <iframe className="embed-responsive-item" id="iframe_style"
                 src={`https://www.youtube.com/embed/${id.videoId}`}
                 frameBorder="0"
@@ -16,7 +16,6 @@ function YoutubeEmbeded({embedId}) {
             /> 
             )
         }
-
         </div>
     )
 }

@@ -14,9 +14,13 @@ function Videos() {
     )
       .then((res) => res.json())
       .then((data) => {
-        const result = data.items.map((item) => {
-          return { videoId: item.contentDetails.upload.videoId };
-        });
+        const result = [];
+        data.items.map((item) => {
+            if(item.contentDetails.hasOwnProperty("upload"))
+            {
+              result.push({ videoId : item.contentDetails.upload.videoId });
+            }
+          });
 
         dispatch({
           type: 'UPDATE_VIDEOS',

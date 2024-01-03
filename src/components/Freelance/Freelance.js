@@ -44,7 +44,7 @@ function Freelance() {
                   </li>
                   <li>
                     <Link
-                      to={{ pathname: "https://www.instagram.com/artistly73/" }}
+                      to={{ pathname: "https://www.instagram.com/artistly_studio/" }}
                       target="_blank"
                     >
                       <img src="./images/instagram.png" alt="instagram" />
