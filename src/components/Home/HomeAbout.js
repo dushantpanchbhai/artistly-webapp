@@ -20,12 +20,18 @@ function HomeAbout() {
         {/* paragraph */}
         <div className="homeAbout_paragraph">
           <p>
-            Wondering what this website is about? Hey there, I am glad you visit
+            {/* Wondering what this website is about? Hey there, I am glad you visit
             my website. This is Dushant Panchbhai. I am a CGI Artist passionate about learning more about 3D Art and Visual
             Effects and sharing all the knowledge I have with others. This
             website is my small initiative to share all my model files and
             videos in one place. Check out my social handles to know more about
-            me. Also do Subscribe to my YOUTUBE channel Artistly ;). Thank You!
+            me. Also do Subscribe to my YOUTUBE channel Artistly ;). Thank You! */}
+            Welcome to my website! I'm Dushant Panchbhai, a CGI artist driven by a deep passion 
+            for filmmaking and storytelling. I'm excited to have you here. This platform serves 
+            as my small initiative to share all my model files and videos in one convenient space. 
+            If you're interested in the fascinating world of CGI and want to join me on this 
+            creative journey, don't forget to subscribe to my YouTube channel, Artistly. 
+            Together, let's embark on the exciting adventure of "Telling Stories through CGI."
           </p>
         </div>
 
@@ -42,12 +48,12 @@ function HomeAbout() {
               <img src="../images/instagram.png" class="individual_icon" alt="instagram"></img>
             </Link>
 
-            <Link
+            {/* <Link
               to={{ pathname: "https://www.facebook.com/dushant.panchbhai.9/" }}
               target="_blank"
             >
               <img src="../images/facebook.png" class="individual_icon" alt="facebook"></img>
-            </Link>
+            </Link> */}
 
             <Link
               to={{ pathname: "https://www.youtube.com/c/Artistly" }}

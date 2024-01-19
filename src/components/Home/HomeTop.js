@@ -22,7 +22,7 @@ function HomeTop() {
           <h1 className="brand" id="homeTop_brand">
             Artistly
           </h1>
-          <p>3D Models, Tutorials and More...</p>
+          <p>Telling Stories through CGI.</p>
           
         </div>
 
